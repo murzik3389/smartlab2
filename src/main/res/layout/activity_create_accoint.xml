@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    tools:context="murzik.smartlab.CreateAccount">
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_marginTop="56dp"
+            android:layout_marginStart="20dp"
+
+            android:text="Создание карты\nпациента"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginEnd="20dp"
+
+            android:text="Пропустить"
+            android:textColor="#1A6FEE"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="190pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190pt"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+
+
+                android:text="Без карты пациента вы не сможете заказать анализы."
+                android:textColor="#939396"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+
+                android:text="В картах пациентов будут храниться результаты\nанализов вас и ваших близких."
+                android:textColor="#939396"
+                android:textSize="14sp" />
+
+            <EditText
+
+                android:id="@+id/account_name"
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+
+                android:background="@drawable/input_bg"
+
+                android:gravity="start|center_vertical"
+                android:hint="Имя"
+                android:inputType="textPersonName"
+
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingStart="14dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="#939396"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/account_surname_1"
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+
+                android:background="@drawable/input_bg"
+
+                android:gravity="start|center_vertical"
+                android:hint="Отчество"
+                android:inputType="textPersonName"
+
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingStart="14dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="#939396"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/account_surname_2"
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+
+                android:background="@drawable/input_bg"
+
+                android:gravity="start|center_vertical"
+                android:hint="Фамилия"
+                android:inputType="textPersonName"
+
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingStart="14dp"
+
+
+                android:textColor="@color/black"
+                android:textColorHint="#939396"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/account_birthday"
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+
+                android:background="@drawable/input_bg"
+
+                android:gravity="start|center_vertical"
+                android:hint="Дата рождения"
+                android:paddingStart="14dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="#939396"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:textColorHint="#939396"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/input_bg"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/account_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15pt"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10pt"
+        android:background="@drawable/button_email_disable_bg"
+        android:onClick="goanalyse"
+        android:text="Создать"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+
+</LinearLayout>
